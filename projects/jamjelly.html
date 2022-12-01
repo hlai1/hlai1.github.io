@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" type="image/png" href="../assets/huarui-logo.PNG" />
+        <title>Huarui Lai</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+        <link rel="icon" type="image/png" href="../assets/h-icon.png" />
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="projects.css">
+        <script defer src="js/app.js"></script>
+
+    </head>
+    <body>
+        <header class="primary-header flex">
+            <h1 class="logo">
+                <a href="../index.html">
+                    <img class="huarui-logo" alt="personal logo with letter H" src="../assets/huarui-logo.PNG" />
+                </a>
+            </h1>
+            <nav>
+                <ul id="primary-navigation" class="primary-navigation flex">
+                    <li>
+                        <a href="../assets/resume.pdf" target="_blank" class="space">
+                            Resume
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../about/about.html" class="space">
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+            <div class = "subhead">
+                 <div class = "proj-title">
+                     Jam & Jelly.
+                 </div>
+                 <div class="desc-parent">
+                     <div class="desc">
+                         <img class="icon" alt="calendar-icon" src="../assets/calendar.png" />
+                         <div class="date">Oct - Dec 2021</div>
+                     </div>
+                     <div class="desc">
+                         <img class="icon" alt="group-icon" src="../assets/group.png" />
+                         <div class="date">Term Project for 15-112</div>
+                     </div>
+                 </div>
+            </div>
+
+         <div class="body-text-big"> 
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/rhHavSdX7ck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+         </div>
+
+         <div class="body-text"> 
+            <div class="intros">
+                    <div class="subheading">Project Overview</div>
+            </div>
+            <div class="description">
+                During my first semester of college, I took a course called 15-112–Fundamentals of Computer Science. For the last four weeks of the course, we were assigned a term project–a deliverable that showcased what we had learned over the course of the semester, whilst also integrating something new. It could be anything–a video game, a stock visualizer, a chess AI. I decided to create Jam & Jelly, a Spotify playlist generator. It takes input such as the user’s favorite artist, genre, and current mood to create a modifiable Spotify playlist for the user.
+            </div>
+        </div>
+
+        <div class="body-text"> 
+            <div class="intros">
+                    <div class="subheading">Project Motivation</div>
+            </div>
+            <div class="description">
+                Music lovers and listeners alike have platforms such as Spotify, Apple Music, and Youtube Music to find up and coming releases from loved artists. However, it often becomes more and more difficult to find relevant music in the current age with so many emerging artists. Thus, the goal of my 15-112 term project was to streamline and maximize the music-finding process for users–enabling a computer algorithm to compute and recommend songs for users based on their current listening.
+            </div>
+        </div>
+
+        <div class="body-text"> 
+            <div class="intros">
+                    <div class="subheading">Timeline</div>
+            </div>
+
+            <div class="description">
+                <div class="table">
+                    <div class="col descriptions pad">
+                       <div class="bold">
+                        Research
+                       </div>
+                       <div class="col">
+                        Analyzed the current market and what song-recommendation platforms existed, and what metrics they used to suggest songs to users; researched what song metrics the spotify API could grab, and how I could utilize those to categorize and recommend songs to users
+                      </div>
+                    </div>
+                    <div class="col descriptions pad">
+                        <div class="bold">
+                            Design
+                        </div>
+                        <div class="col">
+                            Deliberately integrated aesthetic user interface using Tkinter package and Python graphics; created initial wireframes to brainstorm the interface.
+                        </div>
+                    </div>
+                    <div class="col descriptions pad">
+                        <div class="bold">
+                            Software
+                        </div>
+                        <div class="col">
+                            Utilized spotipy (Spotify API), recursive backtracking, graph algorithm logic, and Python programming to create an editable playlist of varying size for users–generated playlists based on user’s favorite artist, genre, and current mood.
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+
+        <div class="body-text"> 
+            <div class="intros">
+                    <div class="subheading">Wireframes</div>
+            </div>
+            <div class="wire-section">
+                <img class="port" alt="start-page" src="../assets/start.png" />
+                <img class="port" alt="intro-page" src="../assets/intro.png" /> 
+                <img class="port" alt="artist-page" src="../assets/artist.png" /> 
+            </div>
+            <div class="wire-section">
+                <img class="port" alt="mood-page" src="../assets/mood.png" />
+                <img class="port" alt="genre-page" src="../assets/genre.png" /> 
+                <img class="port" alt="playlist-page" src="../assets/playlist.png" /> 
+            </div>
+        </div>
+
+        <div class="body-text"> 
+            <div class="intros">
+                    <div class="subheading">Structural Plan</div>
+            </div>
+            <div class="description">
+                My algorithmic plan was separated into two parts—graphics and programming logic. One python file handled everything tkinter-based. This is where I was implementing my user interface: modes, buttons, text boxes, displaying playlists, and more. My other file is contained the logic behind generating playlists. Based on a user’s favorite artist and preferred playlist size, generate/append to a playlist, I was able to categorize songs into moods corresponding with what the user inputted and that song’s characteristics (ex: danceability, valence, instrumentalness, etc. etc). Users could randomize the order of their playlist, move songs around, or delete songs from the list (recursive algorithm replaced the deleted songs with new songs). The user is then brought back to the homepage in which they have the option of having a new playlist generated for them that’s based off their last playlist.
+            </div>
+        </div>
+        <div class="body-text"> 
+            <div class="intros">
+                    <div class="subheading">Algorithmic Plan</div>
+            </div>
+            <div class="description">
+                The trickiest part of my project was generating the playlist. I had to figure out how I wanted to categorize songs based on user inputs—what counts as a “happy” song or “sad” song? In order to do this, I ended up creating a matrix for the songs that directly aligned with the user’s inputted favorite artist, running that against a big list of songs overall, each with their own matrix (keeping track of factors like genre, danceability, liveness, tempo, etc) and adding that song to the current playlist if only a certain number of characteristics are “similar enough” or if the compatibility is above a certain score. Furthermore, I had to check that each song wasn’t already present in the list (no duplicates--”if x not in songPlaylist” then add the song). Additional functionality involved letting the user delete songs in the list they didn’t like and the algorithm would recurse to regenerate similar songs. Finally, once users generated the playlist once, they had the option of having a new playlist generated for them based on their previous playlist. This  involved the basic concept behind graph algorithms–first, I generated a dictionary containing sets of songs and then, compared similarities between key-value pairs in the dictionary, before finally, adding songs to the new playlist with the greatest similarity.
+            </div>
+        </div>
+        <div class="body-text"> 
+            <div class="intros">
+                    <div class="subheading">Summary</div>
+            </div>
+            <div class="description">
+                The goal of this project was to apply my passion of listening to Spotify music to a real-world project. I was able to apply my learnings from 15-112 on data structures and algorithms in python and also learn about spotipy, webscraping, and APIs in general, to create a functional and modifiable playlist generator. In the future, I’d love to look into using more metrics to recommend songs to users, or to grab user’s previous listening habits to recommend a new playlist. After all, it’s music for you. By you.
+            </div>
+        </div>
+
+        
+
+        <div class="footer">
+            <div class="container">
+                <div class="contact center">
+                    <a href = "google.html">
+                        <div class="button left">
+                            <img class="arrow" alt="left-arrow" src="../assets/left.png" />
+                            <div>prev</div>
+                        </div>   
+                    </a>
+                    <a class="small-text" href = "pamela.html">   
+                        <div class="button right">
+                            <div>next</div>
+                            <img class="arrow" alt="right-arrow" src="../assets/right.png" />
+                        </div>   
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="services-list-1">
+                    <a class="contact" href = "mailto:huarui.lai@gmail.com" target="_blank">
+                        <img class="icon" alt="mail-icon" src="../assets/plane.png" />
+                        <div class="small-text">
+                            <div class="username">huarui.lai@gmail.com</div>
+                        </div>
+                    </a>
+                    <a class="contact" href = "https://github.com/hlai1" target="_blank">
+                        <img class="icon" alt="github-icon" src="../assets/github.png" />
+                        <div class="small-text">
+                            <div class="username">hlai1</div>
+                        </div>
+                    </a>
+                    <a class="contact" href = "https://linkedin.com/in/huarui-lai" target="_blank">
+                        <img class="icon" alt="linkedin-icon" src="../assets/linkedin.png" />
+                        <div class="small-text">
+                            <div class="username">Huarui Lai</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="contact center">
+                    <img class="icon" alt="star-icon" src="../assets/star.png" />
+                    <div class="small-text">   
+                        <div class="username-1">made by Huarui Lai</div>
+                    </div>
+                    <img class="icon" alt="star-icon" src="../assets/star.png" />
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -8,15 +8,16 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
         <link rel="icon" type="image/png" href="../assets/h-icon.png" />
         <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="projects.css">
+        <link rel="stylesheet" href="../css/projects.css">
         <script defer src="js/app.js"></script>
 
     </head>
     <body>
+        <!-- header bar at the top of every page -->
         <header class="primary-header flex">
             <h1 class="logo">
                 <a href="../index.html">
-                    <img class="huarui-logo" alt="personal logo with letter H" src="../assets/huarui-logo.PNG" />
+                    <img class="huarui-logo" alt="personal logo with letter H" src="../assets/H-logo.png" />
                 </a>
             </h1>
             <nav>
@@ -27,7 +28,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="../about/about.html" class="space">
+                        <a href="../about.html" class="space">
                             About
                         </a>
                     </li>
@@ -35,37 +36,41 @@
             </nav>
         </header>
 
-            <div class = "subhead">
-                 <div class = "proj-title">
-                     Jam & Jelly.
-                 </div>
-                 <div class="desc-parent">
-                     <div class="desc">
-                         <img class="icon" alt="calendar-icon" src="../assets/calendar.png" />
-                         <div class="date">Oct - Dec 2021</div>
-                     </div>
-                     <div class="desc">
-                         <img class="icon" alt="group-icon" src="../assets/group.png" />
-                         <div class="date">Term Project for 15-112</div>
-                     </div>
-                 </div>
-            </div>
+        <!-- flexbox layout of project overview -->
+        <div class = "subhead">
+                <div class = "proj-title">
+                    Jam & Jelly.
+                </div>
+                <div class="desc-parent">
+                    <div class="desc">
+                        <img class="icon" alt="calendar icon" src="../assets/calendar.png" />
+                        <div class="date">Oct - Dec 2021</div>
+                    </div>
+                    <div class="desc">
+                        <img class="icon" alt="group icon" src="../assets/group.png" />
+                        <div class="date">Term Project for 15-112</div>
+                    </div>
+                </div>
+        </div>
 
+        <!-- YouTube video of project -->
          <div class="body-text-big"> 
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/rhHavSdX7ck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
          </div>
 
+         <!-- text description of project overview -->
          <div class="body-text"> 
             <div class="intros">
-                    <div class="subheading">Project Overview</div>
+                <div class="subheading">Project Overview</div>
             </div>
             <div class="description">
                 During my first semester of college, I took a course called 15-112–Fundamentals of Computer Science. For the last four weeks of the course, we were assigned a term project–a deliverable that showcased what we had learned over the course of the semester, whilst also integrating something new. It could be anything–a video game, a stock visualizer, a chess AI. I decided to create Jam & Jelly, a Spotify playlist generator. It takes input such as the user’s favorite artist, genre, and current mood to create a modifiable Spotify playlist for the user.
             </div>
         </div>
 
+        <!-- text description of project motivation -->
         <div class="body-text"> 
             <div class="intros">
                     <div class="subheading">Project Motivation</div>
@@ -75,11 +80,11 @@
             </div>
         </div>
 
+        <!-- flexbox layout of project timeline -->
         <div class="body-text"> 
             <div class="intros">
                     <div class="subheading">Timeline</div>
             </div>
-
             <div class="description">
                 <div class="table">
                     <div class="col descriptions pad">
@@ -107,26 +112,29 @@
                         </div>
                     </div>
                 </div>
-              
             </div>
         </div>
 
+        <!-- flexbox section of project images -->
         <div class="body-text"> 
             <div class="intros">
                     <div class="subheading">Wireframes</div>
             </div>
             <div class="wire-section">
-                <img class="port" alt="start-page" src="../assets/start.png" />
-                <img class="port" alt="intro-page" src="../assets/intro.png" /> 
-                <img class="port" alt="artist-page" src="../assets/artist.png" /> 
+                <img class="port" alt="start page" src="../assets/start.png" />
+                <img class="port" alt="intro page" src="../assets/intro.png" /> 
             </div>
             <div class="wire-section">
-                <img class="port" alt="mood-page" src="../assets/mood.png" />
-                <img class="port" alt="genre-page" src="../assets/genre.png" /> 
-                <img class="port" alt="playlist-page" src="../assets/playlist.png" /> 
+                <img class="port" alt="artist page" src="../assets/artist.png" /> 
+                <img class="port" alt="mood page" src="../assets/mood.png" />
+            </div>
+            <div class="wire-section">
+                <img class="port" alt="genre page" src="../assets/genre.png" /> 
+                <img class="port" alt="playlist page" src="../assets/playlist.png" /> 
             </div>
         </div>
 
+        <!-- text description of structural plan -->
         <div class="body-text"> 
             <div class="intros">
                     <div class="subheading">Structural Plan</div>
@@ -152,55 +160,55 @@
             </div>
         </div>
 
-        
-
+        <!-- previous and next buttons to navigate between projects -->              
         <div class="footer">
             <div class="container">
                 <div class="contact center">
                     <a href = "google.html">
                         <div class="button left">
-                            <img class="arrow" alt="left-arrow" src="../assets/left.png" />
-                            <div>prev</div>
+                            <img class="arrow" alt="left arrow" src="../assets/left.png" />
+                            <div class="bold">prev</div>
                         </div>   
                     </a>
-                    <a class="small-text" href = "pamela.html">   
+                    <a href = "pamela.html">   
                         <div class="button right">
-                            <div>next</div>
-                            <img class="arrow" alt="right-arrow" src="../assets/right.png" />
+                            <div class="bold">next</div>
+                            <img class="arrow" alt="right arrow" src="../assets/right.png" />
                         </div>   
                     </a>
                 </div>
             </div>
         </div>
 
+        <!-- personal contact information -->
         <div class="footer">
             <div class="container">
-                <div class="services-list-1">
+                <div class="footer-list">
                     <a class="contact" href = "mailto:huarui.lai@gmail.com" target="_blank">
-                        <img class="icon" alt="mail-icon" src="../assets/plane.png" />
+                        <img class="icon" alt="mail icon" src="../assets/plane.png" />
                         <div class="small-text">
                             <div class="username">huarui.lai@gmail.com</div>
                         </div>
                     </a>
                     <a class="contact" href = "https://github.com/hlai1" target="_blank">
-                        <img class="icon" alt="github-icon" src="../assets/github.png" />
+                        <img class="icon" alt="github icon" src="../assets/github.png" />
                         <div class="small-text">
                             <div class="username">hlai1</div>
                         </div>
                     </a>
                     <a class="contact" href = "https://linkedin.com/in/huarui-lai" target="_blank">
-                        <img class="icon" alt="linkedin-icon" src="../assets/linkedin.png" />
+                        <img class="icon" alt="linkedin icon" src="../assets/linkedin.png" />
                         <div class="small-text">
                             <div class="username">Huarui Lai</div>
                         </div>
                     </a>
                 </div>
                 <div class="contact center">
-                    <img class="icon" alt="star-icon" src="../assets/star.png" />
+                    <img class="icon" alt="star icon" src="../assets/star.png" />
                     <div class="small-text">   
                         <div class="username-1">made by Huarui Lai</div>
                     </div>
-                    <img class="icon" alt="star-icon" src="../assets/star.png" />
+                    <img class="icon" alt="star icon" src="../assets/star.png" />
                 </div>
             </div>
         </div>

@@ -1,53 +1,141 @@
+a {
+  color: #000;
+  text-decoration: none;
+}
+/* project image blurred when hovered on index.html page */
+.blur {
+  backdrop-filter: blur(3px);
+}
 body {
-    font-family: "Inter", sans-serif;
-    overflow-x: hidden;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    transition: color .3s ease,background-color .3s ease;
-  }
-
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  transition: color .3s ease,background-color .3s ease;
+}
+.center {
+  justify-content: center;
+  padding: 7px 0 10px 0;
+}
+/* contact information flexbox at the bottom of each page */
+.contact {
+  vertical-align: center;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.flex {
+  display: flex;
+}
+/* flex children on index.html page */
+.flex-item-left {
+  flex: 35%;
+}
+.flex-item-right {
+  flex: 60%;
+}
+.footer {
+  padding: 7px;
+}
+.footer-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+}
+.green-font {
+  color: #80B957;
+  font-weight: 550;
+}
 .header {
     display: flex;
     flex-direction: row;
     padding: 0 30px;
     align-items: center;
 }
-
-.menu {
-    flex: 1 0 auto;
-    text-align: right;
-    
+/* format for personal logo */
+.huarui-logo {
+  font-weight: bolder;
+  width: 50px;
+  color: #D0ECBC;
+  padding: 0 0 0 20px;
+  background-color: rgba(255, 255, 255, 0);
+}
+/* icons in the footer of each page */
+.icon {
+  width: 20px;
+  height: 20px;
+  padding: 0 5px;
+}
+.image-display {
+  border-radius: 4%;
+  width: 100%;
+}
+.inner-flex {
+  display: flex;
+}
+.intro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 0 0 50px;
+}
+.intro-text {
+  flex: 0 1 auto;
+}
+.left {
+  flex: 60%;
+  padding: 0 20px 0 15px;
+}
+.logo {
+  margin: 1rem;
+}
+/* on:hover text that shows up for projects on index.html page */
+.long, .long-1 {
+  margin: 0 10px;
+  font-weight: 550;
+  font-size: 16px;
 }
 .navbar-item {
     margin: 0 50px;
     font-weight: 600;
 }
-
 .nav-bar{
   background-color: rgba(255, 255, 255, 0.9);
 }
-a {
-    color: #000;
-    text-decoration: none;
+.no-blur {
+  backdrop-filter: blur(0);
 }
-
-.huarui-logo {
-    font-weight: bolder;
-    width: 50px;
-    color: #D0ECBC;
-    padding: 0 0 0 20px;
-    background-color: rgba(255, 255, 255, 0);
+/*div that goes over project images to allow for blur on hover on index.html page */
+.overlay {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background:rgba(255, 255, 255, 0.6);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  font-weight: 500;
+  color: black;
+  transition: ease-in-out 0.6s;
 }
-
-.flex {
-    display: flex;
+.overlay:hover{
+  opacity: 1;
 }
-
-.logo {
-    margin: 1rem;
+.parent-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 3.9vh;
+  padding: 20px 45px 30px 45px;
+  align-items: center;
 }
-
+/* header bar at the top of each page */
 .primary-header {
     align-items: center;
     justify-content: space-between;
@@ -58,360 +146,224 @@ a {
     background-color: rgba(255, 255, 255, 0.9);
     z-index: 100;
 }
-
 .primary-navigation {
     list-style: none;
     padding: 0;
     margin: 0 50px;
     font-weight: 600;
 }
+.proj {
+  margin: 20px;
+  align-items: center;
+  flex: 1 0 30%;
+  text-align: center;
+  font-weight: 575;
 
-.space {
-    margin: 0 0 0 50px;
+  /* adding anime.js to allow for projects to face in */
+  opacity: 0;
 }
-
-.space:hover {
-    color: #80B957;
+.proj-thumbnail {
+  position: absolute;
 }
-
-.intro {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 0 0 0 50px;
-}
-
-.intro-text {
-    flex: 0 1 auto;
-}
-
-.jump {
-    flex: 1 0 auto;
-    margin: 10px 50px;
-    border-radius: 20px;
-}
-.section-header, .section-header-1 {
-    font-weight: 900;
-    font-size: 3vw;
-    align-items: center;
-}
-.section-header-1 {
-  margin: 0 20px 0 0;
-}
-
-.icon {
-    width: 20px;
-    height: 20px;
-    padding: 0 5px;
-}
-
-.icon-big {
-  width: 30px;
-  height: 30px;
-  padding: 0 7px;
-}
-
-.contact {
-    vertical-align: center;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-}
-.green-font {
-    color: #80B957;
-    font-weight: 550;
-}
-.body-text{
-    font-weight: 500;
-    margin: 50px 20px 50px 0;
-    font-size: 2.5vmin;
-    align-items: center;
-}
-.title-text{
+.proj-desc{
+  margin: 0 10px;
+  font-weight: 550;
   font-size: 16px;
+}
+.right {
+  padding: 0 15px 0 20px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly; 
+}
+/* format for name on index.html page */
+.section-header {
+  font-weight: 900;
+  font-size: 41px;
+  align-items: center;
+}
+/* format for personal description on index.html page */
+.section-text{
+  font-weight: 500;
+  margin: 10px 50px 10px 0;
+  font-size: 20px;
+  align-items: center;
+}
+.project{
+  padding: 15px 0 0 0; 
+  position: relative;
+}
+/* formatting for project flexbox items */
+.project-list{
+  justify-items: center;
+  padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.short {
+  display: none;
+}
+.show{
+display: inline;
 }
 .small-text {
   font-size: 16px;
 }
- 
-.parent-flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 3.9vh;
-    padding: 20px 45px 30px 45px;
-    align-items: center;
-  }
-  
-  .flex-item-left {
-    flex: 35%;
-  }
-
-  .jamjelly{
-    z-index: 5;
-    display: none;
-  }
-  .show{
-    display: inline;
-  }
-
-  .left {
-    flex: 60%;
-  }
-  
-  .flex-item-right {
-    flex: 60%;
-  }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly; 
+/* navbar formatting for "about" and "resume" */
+.space {
+    margin: 0 0 0 50px;
+}
+.space:hover {
+    color: #80B957;
 }
 
-.proj {
-    margin: 20px;
-    align-items: center;
-
-    /* adding anime.js */
-    opacity: 0;
+.title-text{
+  font-size: 16px;
 }
 
-  .cap {
-    border-radius: 4%;
-    width: 100%;
+/* display for contact information usernames in the footer of each page */
+.username, .username-1 {
+  font-size: 14px;
+}
+
+/* phone layout */
+@media screen and (max-width: 600px) {
+  .flex-item-right, .flex-item-left, .left {
+    flex: 100%;
   }
-
-  .services {
-    padding: 15px 0 0 0; 
-    position: relative;
-  }
-
-  .button {
-    padding: 0 25px 0 20px;
-    margin: 0 20px;
-    border-radius: 25px;
-    border-style: solid;
-    border-color: #669F3C;
-    color: #669F3C;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-  }
-
-  .left {
-    padding: 0 20px 0 15px;
-  }
-
-  .right {
-    padding: 0 15px 0 20px;
-  }
-
-  .arrow {
-    width: 30px;
-    height: 30px;
-  }
-
-  .button:hover {
-    box-shadow: inset 8em 0 0 0 #669F3C;
-    color: white;
-    border-style: solid;
-    border-color: #669F3C;
-  }
-
-  .footer {
-    padding: 7px;
-  }
-
-  .center {
-    justify-content: center;
-    padding: 7px 0 10px 0;
-  }
-
-  .services-list{
-    justify-items: center;
-    padding: 15px 0;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
- .services-list-1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 30px;
-  }
-
-  .username, .username-1 {
-    font-size: 14px;
-  }
-
   .inner-flex {
     display: flex;
+  }  
+  .long{
+    display: none;
   }
-
-  .parent-flex-small{
+  .long-1 {
+    margin: 0 10px;
+    font-weight: 550;
+    font-size: 12px;
+  }  
+  .parent-flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 3.9vh;
-    padding: 20px 25px 30px 25px;
+    padding: 20px 45px 20px 45px;
     align-items: center;
   }
-
-  .proj-desc{
-    margin: 0 10px;
-    font-weight: 550;
-    font-size: 16px;
+  .primary-navigation {
+    margin: 10px 25px 10px 0px;
   }
-  .long, .long-1 {
-    margin: 0 10px;
-    font-weight: 550;
-    font-size: 16px;
-}
-.short {
-    display: none;
-}
-  .overlay {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background:rgba(255, 255, 255, 0.6);
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    font-weight: 500;
-    color: black;
-    transition: ease-in-out 0.6s;
-  }
-
-  .blur {
-    backdrop-filter: blur(3px);
-  }
-
-  .no-blur {
-    backdrop-filter: blur(0);
-  }
- 
-  .overlay:hover{
-    opacity: 1;
-  }
-
   .proj {
-    flex: 1 0 30%;
+    flex: 1 0 80%;
     text-align: center;
     font-weight: 575;
   }
+  .proj-desc{
+    margin: 0 10px;
+    font-weight: 550;
+    font-size: 12px;
+    position: absolute; 
+    top: 26px;
+  }
+  .project {
+    position: relative;
+    padding: initial;
+  }
+  .project-list{
+    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section-header {
+    font-weight: 900;
+    font-size: 18px;
+    align-items: center;
+  }
+  .section-text{
+    font-weight: 500;
+    margin: 10px 20px 10px 0;
+    font-size: 15px;
+    align-items: center;
+  }
+  .short {
+    margin: 0 10px;
+    font-weight: 550;
+    font-size: 12px;
+    display: initial;
+  }    
+}
 
-  .proj-thumbnail {
-    position: absolute;
+/* tablet layout */
+@media (max-width: 850px){
+  .body {
+    margin: auto;
   }
+  .content{
+    display: none;
+  }
+  .long{
+    display: none;
+  }
+  .long-1 {
+    margin: 0 10px;
+    font-weight: 550;
+    font-size: 14px;
+  }   
+  .proj-desc{
+    margin: 0 10px;
+    font-weight: 550;
+    font-size: 14px;
+  }
+  .section-header {
+    font-weight: 900;
+    font-size: 27px;
+    align-items: center;
+  }
+  .section-text{
+    font-weight: 500;
+    margin: 10px 20px 10px 0;
+    font-size: 17px;
+    align-items: center;
+  }
+  .project-list-1{
+    display: flex;
+    justify-content: center;
+  }   
+  .short {
+    margin: 0 10px;
+    font-weight: 550;
+    font-size: 14px;
+    display: initial;
+  }
+  .small-text {
+    font-size: 13px;
+  }
+  .title-text {
+    font-size: 15px;
+    line-height: 180%;
+  }
+}
 
-  /* Responsive layout - makes a one column-layout instead of a two-column layout */
-  @media screen and (max-width: 600px) {
-    .flex-item-right, .flex-item-left, .left {
-      flex: 100%;
-    }
-    .proj {
-      flex: 1 0 80%;
-      text-align: center;
-      font-weight: 575;
-    }
-    .inner-flex {
-      display: flex;
-    }  
-    .primary-navigation {
-      margin: 10px 25px 10px 0px;
-    }
-    .proj-desc{
-      margin: 0 10px;
-      font-weight: 550;
-      font-size: 12px;
-      position: absolute; 
-      top: 26px;
-    }
-    .short {
-      margin: 0 10px;
-      font-weight: 550;
-      font-size: 12px;
-      display: initial;
-    }
-    .long-1 {
-      margin: 0 10px;
-      font-weight: 550;
-      font-size: 12px;
-    }
-    .long{
-        display: none;
-    }
+/* minimized desktop view */
+@media (max-width: 1000px){
+  .long{
+    display: none;
   }
-
-  @media (max-width: 850px){
-    .body {
-      margin: auto;
-    }
-    .short {
-      margin: 0 10px;
-      font-weight: 550;
-      font-size: 14px;
-      display: initial;
-    }
-    .long{
-        display: none;
-    }
-    .long-1 {
-      margin: 0 10px;
-      font-weight: 550;
-      font-size: 14px;
-    }
-    .proj-desc{
-      margin: 0 10px;
-      font-weight: 550;
-      font-size: 14px;
-    }
-    .title-text {
-      font-size: 15px;
-      line-height: 180%;
-    }
-    .section-header, .section-header-1 {
-      font-size: 18px;
-      line-height: 180%;
-    }
-    .small-text {
-      font-size: 13px;
-    }
-    .services-list-1{
-      display: flex;
-      justify-content: center;
-    }
-    .content{
-      display: none;
-      
-    }
+  .proj-desc{
+    margin: 0 10px;
+    font-weight: 550;
+    font-size: 14px;
   }
-  
-  @media (max-width: 1000px){
-    .username{
-      display: none;
-    }
-    .proj-desc{
-      margin: 0 10px;
-      font-weight: 550;
-      font-size: 14px;
-    }
-    .short {
-      margin: 0 10px;
-      font-weight: 550;
-      font-size: 14px;
-      display: initial;
-    }
-    .long{
-      display: none;
-    }
+  .short {
+    margin: 0 10px;
+    font-weight: 550;
+    font-size: 14px;
+    display: initial;
   }
+  .username{
+    display: none;
+  }    
+}

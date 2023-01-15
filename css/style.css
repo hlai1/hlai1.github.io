@@ -162,6 +162,17 @@ body {
   /* adding anime.js to allow for projects to face in */
   opacity: 0;
 }
+.proj7{
+  flex-basis: 30%;
+  margin: 20px;
+  align-items: center;
+  /* flex: 1 0 30%; */
+  text-align: center;
+  font-weight: 575;
+
+  /* adding anime.js to allow for projects to face in */
+  opacity: 0;
+}
 .proj-thumbnail {
   position: absolute;
 }
@@ -260,7 +271,7 @@ display: inline;
     flex: 1 0 80%;
     text-align: center;
     font-weight: 575;
-  }
+  } 
   .proj-desc{
     margin: 0 10px;
     font-weight: 550;
@@ -311,7 +322,7 @@ display: inline;
     margin: 0 10px;
     font-weight: 550;
     font-size: 14px;
-  }   
+  }
   .proj-desc{
     margin: 0 10px;
     font-weight: 550;
@@ -366,4 +377,32 @@ display: inline;
   .username{
     display: none;
   }    
+}
+
+@media (max-width: 1200px){
+  .proj7{
+    flex-basis: 46%;
+    margin: 20px;
+    align-items: center;
+    /* flex: 1 0 30%; */
+    text-align: center;
+    font-weight: 575;
+  
+    /* adding anime.js to allow for projects to face in */
+    opacity: 0;
+  }
+}
+
+@media (max-width: 680px){
+  .proj7{
+    flex-basis: 100%;
+    margin: 20px;
+    align-items: center;
+    /* flex: 1 0 30%; */
+    text-align: center;
+    font-weight: 575;
+
+    /* adding anime.js to allow for projects to face in */
+    opacity: 0;
+  }
 }

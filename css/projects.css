@@ -106,6 +106,9 @@ header, .rows {
     margin: 7px 30px;
     border-radius: 16px;
 }
+#proj7{
+    width:30%;
+}
 .proj-title {
     font-size: 45px;
     padding: 0 30px;

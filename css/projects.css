@@ -77,6 +77,16 @@
 header, .rows {
     display: flex;  /* aligns all child elements (flex items) in a row */
 }
+.img {
+    width: 100%;
+    margin: 5px 30px;
+    border-radius: 16px;
+}
+.med-lar-img{
+    width: 80%;
+    margin: 5px 30px;
+    border-radius: 16px;
+}
 /* image gallery flexbox for project pages */
 .img-section {
     display: flex;
@@ -124,6 +134,11 @@ header, .rows {
 }
 .small-img {
     width: 25%;
+    margin: 5px 30px;
+    border-radius: 16px;
+}
+.med-img {
+    width: 45%;
     margin: 5px 30px;
     border-radius: 16px;
 }

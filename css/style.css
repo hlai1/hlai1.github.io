@@ -192,7 +192,7 @@ body {
 }
 /* format for name on index.html page */
 .section-header {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 41px;
   align-items: center;
 }
@@ -289,7 +289,7 @@ display: inline;
     flex-wrap: wrap;
   }
   .section-header {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 18px;
     align-items: center;
   }
@@ -329,7 +329,7 @@ display: inline;
     font-size: 14px;
   }
   .section-header {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 27px;
     align-items: center;
   }

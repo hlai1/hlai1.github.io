@@ -153,7 +153,7 @@ header, .rows {
     padding: 0 0 10px 0;
 }
 .subheading {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 24px;
     align-items: center;
     margin: 10px 0;
@@ -238,7 +238,7 @@ header, .rows {
         font-weight: 600;
     }
     .subheading {
-        font-weight: 900;
+        font-weight: 700;
         font-size: 16px;
         align-items: center;
         margin: 10px 0;
@@ -268,7 +268,7 @@ header, .rows {
         font-weight: 600;
     }
     .subheading {
-        font-weight: 900;
+        font-weight: 700;
         font-size: 20px;
         align-items: center;
         margin: 10px 0;

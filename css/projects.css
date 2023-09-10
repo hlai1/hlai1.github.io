@@ -74,6 +74,11 @@
     line-height: 1.6;
     margin: 0 0 10px 0;
 }
+.description-dbl {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 25px 0 0 0;
+}
 header, .rows {
     display: flex;  /* aligns all child elements (flex items) in a row */
 }
@@ -82,10 +87,13 @@ header, .rows {
     margin: 5px 30px;
     border-radius: 16px;
 }
-.med-lar-img{
+.med-lar-img {
     width: 80%;
     margin: 5px 30px;
     border-radius: 16px;
+}
+.img-no-border {
+    width: 100%;
 }
 /* image gallery flexbox for project pages */
 .img-section {
@@ -159,11 +167,22 @@ header, .rows {
     margin: 10px 0;
     color: #45992f;
 }
+
+.subheading-dbl {
+    font-weight: 700;
+    font-size: 24px;
+    align-items: center;
+    margin: 0 0 25px 0;
+    color: #45992f;
+}
 /* flexbox for tables */
 .table {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+.text-center {
+    text-align: center;
 }
 /* YouTube video formatting */
 .video-container { 

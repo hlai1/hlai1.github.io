@@ -17,7 +17,7 @@ function animateItem(id){
 
 function animate(){
     console.log("checkpoint 1...");
-    for (let i = 1; i <= 8; i++) {
+    for (let i = 1; i <= 9; i++) {
         let objAnimate = animateItem(i);
         easeIn(i, objAnimate);
         handleScroll(i, objAnimate);

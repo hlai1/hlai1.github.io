@@ -393,7 +393,7 @@ display: inline;
   }
 }
 
-@media (max-width: 700px){
+@media (max-width: 720px){
   .proj7{
     flex-basis: 100%;
     margin: 20px;

@@ -39,3 +39,17 @@ function handleScroll(id, animation) {
 function easeIn(id, animation){
     window.addEventListener('scroll', () => handleScroll(id, animation));
 }
+
+// const mediaQuery = window.matchMedia('(min-width: 1400px)')
+// var toonImg = document.getElementById('proj7');
+// function img(mediaQuery){
+//     if(mediaQuery.matches){
+//         toonImg.classList.remove("proj");
+//         toonImg.classList.add("proj7");
+//         console.log('triggered!');;
+//     }
+// }
+
+
+// mediaQuery.addListener(img);
+// img(mediaQuery);

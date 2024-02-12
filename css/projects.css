@@ -8,7 +8,7 @@
     line-height: 1.3;
 }
 .body-text {
-    width: 75%;
+    width: 50%;
     margin: auto;
 }
 .body-text-big {
@@ -18,6 +18,10 @@
 /* bold font */
 .bold {
     font-weight: 600;
+}
+/* bold font */
+.bolder {
+    font-weight: 900;
 }
 /* previous and next buttons on project pages */
 .button {
@@ -87,10 +91,50 @@ header, .rows {
     margin: 5px 30px;
     border-radius: 16px;
 }
+.img-nob {
+    width: 100%;
+    margin: 5px 30px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more {
+    width: 60%;
+}
+
+.text-half {
+    width: 45%;
+}
+
+.half-img {
+    width: 30%;
+    border-radius: 16px;
+    margin: 0 0 0 20px;
+}
+
 .med-lar-img {
     width: 80%;
     margin: 5px 30px;
     border-radius: 16px;
+}
+
+.elem-center {
+    align-items: center;
+    justify-content: center;
+    margin: -50px;
+}
+.border {
+    margin: 5px 15px;
+}
+.smaller {
+    width: 50%
+}
+.smallest {
+    width: 30%
 }
 .img-no-border {
     width: 100%;
@@ -104,6 +148,10 @@ header, .rows {
     justify-content: center;
     width: 75%;
     margin: auto;
+}
+
+.center {
+    text-align: center;
 }
 /* layout for information architecture image on Pamela's Diner page */
 .info-arch {
@@ -166,6 +214,13 @@ header, .rows {
     align-items: center;
     margin: 10px 0;
     color: #45992f;
+}
+
+.subheading-bl {
+    font-weight: 700;
+    font-size: 24px;
+    align-items: center;
+    margin: 10px 0;
 }
 
 .subheading-dbl {

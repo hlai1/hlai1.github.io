@@ -1,2 +1,2 @@
 # Huarui Lai's personal portfolio website
-hlai1.github.io
+[Portfolio](https://hlai1.github.io)
